@@ -1,0 +1,24 @@
+
+.service {
+    padding-top: 0; 
+
+    .service__title {
+        color: $color-title;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+     
+    .service__set {
+        @extend %list;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+
+

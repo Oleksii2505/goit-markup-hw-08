@@ -1,0 +1,27 @@
+.soc-list {
+    @extend %list;
+    display: flex;
+    justify-content: center;
+    gap: 10px;    
+}
+
+.soc-list__link {
+   width: 44px;
+   height: 44px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   fill: $color-link;
+   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   &:hover,
+   &:focus {
+      fill: $color-white;
+      background-color: $color-accent;
+   }
+}
+
+
+
+

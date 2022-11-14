@@ -1,0 +1,24 @@
+.logo {
+    display: flex;
+    margin-right: 93px;
+    font-family: $logo-font-stack;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $color-black;
+    text-decoration: none;
+
+    .logo__word1 {
+       font-family: $logo-font-stack;
+       color: $color-accent;
+    }
+
+    .logo__word2 {
+       color: $color-white;
+    }
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}

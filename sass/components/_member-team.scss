@@ -1,0 +1,27 @@
+.member-team {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: auto;
+    padding-right: auto;
+
+    .member-team__name {
+       color: $color-title;
+       font-weight: 500;
+       font-size: 16px;
+       line-height: 1.18;
+       letter-spacing: 0.03em;
+       margin: 0 auto 10px;
+       text-align: center;
+    }
+
+    .member-team__position {
+       color: $color-primary;
+       font-weight: 400;
+       font-size: 16px;
+       line-height: 1.18;
+       letter-spacing: 0.03em;
+       text-align: center;
+       padding-bottom: 16px;
+    }
+}
+
