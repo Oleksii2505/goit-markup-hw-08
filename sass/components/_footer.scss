@@ -4,8 +4,12 @@
     padding-bottom: 60px;
 
     .footer__container {
-       display: flex;
-       align-items: baseline;
+         display: flex;
+         align-items: baseline;
+       
+      @media (max-width: 767px) {
+         text-align: center;
+      }  
     }
 
     .footer__nav {

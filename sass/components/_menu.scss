@@ -3,7 +3,7 @@
     display: none;
     @extend %list;
 
-    @media screen and(min-width:768px) {
+    @media (min-width: $tablet) {
         display: flex;
         align-items: center;
     }

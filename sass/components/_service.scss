@@ -1,6 +1,11 @@
 
 .service {
+    display: none;
     padding-top: 0; 
+
+    @media (min-width: $desktop) {
+        display: block;  
+    }
 
     .service__title {
         color: $color-title;
