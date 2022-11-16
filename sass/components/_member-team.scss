@@ -1,8 +1,12 @@
 .member-team {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
     padding-left: auto;
     padding-right: auto;
+
+    @media (min-width: $desktop) {
+      padding-bottom: 30px;
+    }
 
     .member-team__name {
        color: $color-title;

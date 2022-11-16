@@ -3,22 +3,25 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    .footer__container {
-         display: flex;
-         align-items: baseline;
-       
+   .footer__container {
+
       @media (max-width: 767px) {
          text-align: center;
       }  
-    }
 
-    .footer__nav {
+      @media (min-width: 1199px) {
+         display: flex;
+         align-items: baseline;   
+      }
+   }
+
+   .footer__nav {
        @extend %list;
-    }
+   }
 
-    .footer__item:not(:last-child) {
+   .footer__item:not(:last-child) {
        margin-bottom: 9px;
-    }
+   }
 }
 
 .footer__location {
@@ -49,5 +52,27 @@
    &:focus {
       color: $color-accent;
    }
+}
+
+.address-thumb {
+   @media (max-width: 1199px) {
+      margin-bottom: 60px;
+      text-align: center;
+   }
+}
+   
+
+.footer-thumb {
+   
+   @media (min-width: $tablet) and (max-width: 1199px) {
+      display: flex;
+      justify-content: space-around;
+   }
+
+   @media (min-width: $desktop) {
+      display: flex;
+      align-items: baseline;
+   }
+   
 }
 

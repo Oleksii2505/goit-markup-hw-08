@@ -1,6 +1,6 @@
 .modal {
     position: absolute;
-    width: 528px;
+    width: 450px;
     min-height: 581px;
     top: 50%;
     left: 50%;
@@ -11,14 +11,22 @@
     overflow: auto;
     padding: 40px;
 
+    @media (min-width: $desktop) {
+        width: 528px
+    }
+
     .modal__text {
        font-weight: 700;
        font-size: 20px;
-       line-height: 1.15;
+       line-height: 1.5;
        text-align: center;
        letter-spacing: 0.03em;
        color: $color-title;
        margin-bottom: 12px;
+
+       @media (min-width: $desktop) {
+        line-height: 1.15;
+       }
     }
 }
 
