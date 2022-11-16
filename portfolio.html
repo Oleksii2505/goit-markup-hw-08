@@ -15,10 +15,22 @@
     <!-- Шапка сайту -->
     <header class="header">
       <div class="container header__container">
+        <a class="logo" href="./index.html"><span class="logo__word1">Web</span>Studio</a>
+        <button
+          type="button"
+          class="mobile-menu__open-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40">
+            <use class="icon-menu" href="./images/icons.svg/symbol-defs.svg#icon-icon-menu"></use>
+          </svg>
+        </button>
         <nav class="header__nav">
-          <a class="logo" href="./index.html"><span class="logo__word1">Web</span>Studio</a>
           <ul class="menu">
-            <li class="menu__item"><a href="./index.html" class="menu__link">Студія</a></li>
+            <li class="menu__item">
+              <a href="./index.html" class="menu__link">Студія</a>
+            </li>
             <li class="menu__item">
               <a href="./portfolio.html" class="menu__link menu__link--current">Портфоліо</a>
             </li>
@@ -251,62 +263,65 @@
 
     <footer class="footer">
       <div class="container footer__container">
-        <div>
-          <a class="logo footer-logo" href="./index.html"
-            ><span class="logo__word1">Web</span><span class="logo__word2">Studio</span></a
-          >
-          <address>
-            <ul class="footer__nav">
-              <li class="footer__item">
-                <a
-                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="footer__location"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+        <div class="footer-thumb">
+          <div class="address-thumb">
+            <a class="logo footer-logo" href="./index.html"
+              ><span class="logo__word1">Web</span><span class="logo__word2">Studio</span></a
+            >
+            <address>
+              <ul class="footer__nav">
+                <li class="footer__item">
+                  <a
+                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="footer__location"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="mailto:info@devstudio.com" class="footer__link">info@devstudio.com</a>
+                </li>
+                <li class="footer__item">
+                  <a href="tel:+380961111111" class="footer__link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="join-thumb">
+            <p class="join-thumb__text">Приєднуйтесь</p>
+            <ul class="soc-list">
+              <li class="soc-list__item">
+                <a href="#" class="soc-list__link join">
+                  <svg class="soc-list__icon" width="20" height="20">
+                    <use href="./images/icons.svg/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__item">
-                <a href="mailto:info@devstudio.com" class="footer__link">info@devstudio.com</a>
+              <li class="soc-list__item">
+                <a href="#" class="soc-list__link join">
+                  <svg class="soc-list__icon" width="20" height="20">
+                    <use href="./images/icons.svg/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__item">
-                <a href="tel:+380961111111" class="footer__link">+38 096 111 11 11</a>
+              <li class="soc-list__item">
+                <a href="#" class="soc-list__link join">
+                  <svg class="soc-list__icon" width="20" height="20">
+                    <use href="./images/icons.svg/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-list__item">
+                <a href="#" class="soc-list__link join">
+                  <svg class="soc-list__icon" width="20" height="20">
+                    <use href="./images/icons.svg/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="join-thumb">
-          <p class="join-thumb__text">Приєднуйтесь</p>
-          <ul class="soc-list">
-            <li class="soc-list__item">
-              <a href="#" class="soc-list__link join">
-                <svg class="soc-list__icon" width="20" height="20">
-                  <use href="./images/icons.svg/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc-list__item">
-              <a href="#" class="soc-list__link join">
-                <svg class="soc-list__icon" width="20" height="20">
-                  <use href="./images/icons.svg/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc-list__item">
-              <a href="#" class="soc-list__link join">
-                <svg class="soc-list__icon" width="20" height="20">
-                  <use href="./images/icons.svg/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc-list__item">
-              <a href="#" class="soc-list__link join">
-                <svg class="soc-list__icon" width="20" height="20">
-                  <use href="./images/icons.svg/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="subscribe-thumb">
           <p class="subscribe-thumb__text">Підпишіться на розсилку</p>
@@ -330,5 +345,55 @@
         </div>
       </div>
     </footer>
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <div class="menu-container">
+        <button type="button" class="mobile-menu__close-button js-close-menu">
+          <svg width="40" height="40">
+            <use class="icon-close" href="./images/icons.svg/symbol-defs.svg#icon-icon-close"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a href="./index.html" class="mobile-menu__link mobile-menu__link--current">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Контакти</a></li>
+          </ul>
+          <ul class="mobile-menu__contacts">
+            <li class="mobile-menu__contacts-item">
+              <a href="tel:+380961111111" class="mobile-menu__tel"> +38 096 111 11 11</a>
+            </li>
+            <li class="mobile-menu__contacts-item">
+              <a href="mailto:info@devstudio.com" class="mobile-menu__mail"> info@devstudio.com</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="mobile-menu__socials">
+          <li class="mobile-menu__socials-item">
+            <a class="mobile-menu__socials-link" href="#">Twitter</a>
+          </li>
+          <li class="mobile-menu__socials-item">
+            <a class="mobile-menu__socials-link" href="#">Facebook</a>
+          </li>
+          <li class="mobile-menu__socials-item">
+            <a class="mobile-menu__socials-link" href="#">LinkedIn</a>
+          </li>
+          <li class="mobile-menu__socials-item">
+            <a class="mobile-menu__socials-link" href="#">Instagram</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
